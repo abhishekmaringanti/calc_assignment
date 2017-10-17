@@ -1,0 +1,93 @@
+// This file contains the task: wait_for_response.v
+// This task is used to wait for a response on the out_resp line
+//
+
+task waif_for_response;
+    input port_number;
+
+    reg [31:0] wait_timer;
+    `include "../../calc_tb/global_defines.v"
+
+    begin
+        $display("Executing task: wait_for_response for PORT%d.\n", port_number);
+
+        case (port_number)
+            PORT1:  begin
+                        // waiting for 1000 clock cycles before exiting 
+                        for (wait_timer =0; wait_timer < 1000; wait_timer=wait_timer+1)
+                        begin
+                            @(negedge clk_i);
+                            #1;
+                            if (out_resp1 != 'd0)
+                            begin
+                                $display("Received response on out_resp%d line = %h \n", port_number, out_resp1);
+                                break;
+                            end
+                        end
+                        if (wait_timer == 'd1000)
+                            $display("OPERATION FAILED on PORT%d as the response timed out as it has taken longer than 1000 clk cycles without a response\n", port_number);
+                    end
+            PORT2:  begin
+                        // waiting for 1000 clock cycles before exiting 
+                        for (wait_timer =0; wait_timer < 1000; wait_timer=wait_timer+1)
+                        begin
+                            @(negedge clk_i);
+                            #1;
+                            if (out_resp2 != 'd0)
+                            begin
+                                $display("Received response on out_resp%d line = %h \n", port_number, out_resp1);
+                                break;
+                            end
+                        end
+                        if (wait_timer == 'd1000)
+                            $display("OPERATION FAILED on PORT%d as the response timed out as it has taken longer than 1000 clk cycles without a response\n", port_number);
+                    end
+            PORT3:  begin
+                        // waiting for 1000 clock cycles before exiting 
+                        for (wait_timer =0; wait_timer < 1000; wait_timer=wait_timer+1)
+                        begin
+                            @(negedge clk_i);
+                            #1;
+                            if (out_resp3 != 'd0)
+                            begin
+                                $display("Received response on out_resp%d line = %h \n", port_number, out_resp1);
+                                break;
+                            end
+                        end
+                        if (wait_timer == 'd1000)
+                            $display("OPERATION FAILED on PORT%d as the response timed out as it has taken longer than 1000 clk cycles without a response\n", port_number);
+                    end
+            PORT4:  begin
+                        // waiting for 1000 clock cycles before exiting 
+                        for (wait_timer =0; wait_timer < 1000; wait_timer=wait_timer+1)
+                        begin
+                            @(negedge clk_i);
+                            #1;
+                            if (out_resp4 != 'd0)
+                            begin
+                                $display("Received response on out_resp%d line = %h \n", port_number, out_resp1);
+                                break;
+                            end
+                        end
+                        if (wait_timer == 'd1000)
+                            $display("OPERATION FAILED on PORT%d as the response timed out as it has taken longer than 1000 clk cycles without a response\n", port_number);
+                    end
+            default:  begin
+                        // waiting for 1000 clock cycles before exiting 
+                        $display("UNEXPECTED FAILED: in default case condition in wait_for_response task. This is not expected. \n");
+                        for (wait_timer =0; wait_timer < 1000; wait_timer=wait_timer+1)
+                        begin
+                            @(negedge clk_i);
+                            #1;
+                            if (out_resp1 != 'd0)
+                            begin
+                                $display("Received response on out_resp1 line = %h \n", out_resp1);
+                                break;
+                            end
+                        end
+                        if (wait_timer == 'd1000)
+                            $display("OPERATION FAILED on PORT1 as the response timed out as it has taken longer than 1000 clk cycles without a response\n");
+                    end
+        endcase
+    end
+endtask

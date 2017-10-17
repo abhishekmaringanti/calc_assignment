@@ -1,0 +1,569 @@
+Reading /usr/local/modelsim/modeltech/tcl/vsim/pref.tcl 
+
+# 6.5c
+
+# vsim -do {run -all} -c calc1_tb_top 
+# //  ModelSim SE-64 6.5c Aug 27 2009 Linux 2.6.32-642.el6.x86_64
+# //
+# //  Copyright 1991-2009 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading work.calc1_tb_top(fast)
+# run -all 
+# generating clock with time period of 200units
+# [1;34m
+# INITIALIZATION COMPLETE
+# [0m
+# Waiting for reset deassertion
+# [1;34m
+# RESET DEASSERTION COMPLETE.
+# [0m
+# Executing test sequence: test_multiple_rand__addition.
+# *************************************************************************************************************************************************************.
+# Entering task: gen_pattern_for_addition for PORT1.
+# PORT1 operand 1 is = 12153524 and operand 2 is = c0895e81 
+# Exiting task: gen_pattern_for_addition for PORT1.
+# Executing task: wait_for_response for PORT1.
+# Received response on out_resp1 line = 1 
+# Executing task: validate_output for PORT1.
+# [1;31m
+# PORT1 OPERATION FAILED: The output from the DUV and the expected output DO NOT MATCH. DUV value = d29e83a5, expected value = d29e93a5 
+# [0m
+# Exiting task: validate_output for PORT1.
+# *************************************************************************************************************************************************************.
+# *************************************************************************************************************************************************************.
+# Entering task: gen_pattern_for_addition for PORT1.
+# PORT1 operand 1 is = 8484d609 and operand 2 is = b1f05663 
+# Exiting task: gen_pattern_for_addition for PORT1.
+# Executing task: wait_for_response for PORT1.
+# Received response on out_resp1 line = 1 
+# Executing task: validate_output for PORT1.
+# [1;31m
+# PORT1 OPERATION FAILED: DUV response does NOT match expected reponse. The DUV response is 1 and expected response is 2
+# [0m
+# [1;31m
+# PORT1 OPERATION FAILED: The output from the DUV and the expected output DO NOT MATCH. DUV value = 36750c7c, expected value = 36752c6c 
+# [0m
+# Exiting task: validate_output for PORT1.
+# *************************************************************************************************************************************************************.
+# *************************************************************************************************************************************************************.
+# Entering task: gen_pattern_for_addition for PORT1.
+# PORT1 operand 1 is = 06b97b0d and operand 2 is = 46df998d 
+# Exiting task: gen_pattern_for_addition for PORT1.
+# Executing task: wait_for_response for PORT1.
+# Received response on out_resp1 line = 1 
+# Executing task: validate_output for PORT1.
+# [1;31m
+# PORT1 OPERATION FAILED: The output from the DUV and the expected output DO NOT MATCH. DUV value = 4d99049a, expected value = 4d99149a 
+# [0m
+# Exiting task: validate_output for PORT1.
+# *************************************************************************************************************************************************************.
+# *************************************************************************************************************************************************************.
+# Entering task: gen_pattern_for_addition for PORT1.
+# PORT1 operand 1 is = b2c28465 and operand 2 is = 89375212 
+# Exiting task: gen_pattern_for_addition for PORT1.
+# Executing task: wait_for_response for PORT1.
+# Received response on out_resp1 line = 1 
+# Executing task: validate_output for PORT1.
+# [1;31m
+# PORT1 OPERATION FAILED: DUV response does NOT match expected reponse. The DUV response is 1 and expected response is 2
+# [0m
+# [1;31m
+# PORT1 OPERATION FAILED: The output from the DUV and the expected output DO NOT MATCH. DUV value = 3bf9c667, expected value = 3bf9d677 
+# [0m
+# Exiting task: validate_output for PORT1.
+# *************************************************************************************************************************************************************.
+# *************************************************************************************************************************************************************.
+# Entering task: gen_pattern_for_addition for PORT1.
+# PORT1 operand 1 is = 00f3e301 and operand 2 is = 06d7cd0d 
+# Exiting task: gen_pattern_for_addition for PORT1.
+# Executing task: wait_for_response for PORT1.
+# Received response on out_resp1 line = 1 
+# Executing task: validate_output for PORT1.
+# [1;34m
+# PORT1 OPERATION SUCCESSFUL: The output from the DUV matches the expected output. DUV value = 07cbb00e, expected value = 07cbb00e
+# [0m
+# Exiting task: validate_output for PORT1.
+# *************************************************************************************************************************************************************.
+# *************************************************************************************************************************************************************.
+# Entering task: gen_pattern_for_addition for PORT1.
+# PORT1 operand 1 is = 3b23f176 and operand 2 is = 1e8dcd3d 
+# Exiting task: gen_pattern_for_addition for PORT1.
+# Executing task: wait_for_response for PORT1.
+# Received response on out_resp1 line = 1 
+# Executing task: validate_output for PORT1.
+# [1;34m
+# PORT1 OPERATION SUCCESSFUL: The output from the DUV matches the expected output. DUV value = 59b1beb3, expected value = 59b1beb3
+# [0m
+# Exiting task: validate_output for PORT1.
+# *************************************************************************************************************************************************************.
+# *************************************************************************************************************************************************************.
+# Entering task: gen_pattern_for_addition for PORT1.
+# PORT1 operand 1 is = 76d457ed and operand 2 is = 462df78c 
+# Exiting task: gen_pattern_for_addition for PORT1.
+# Executing task: wait_for_response for PORT1.
+# Received response on out_resp1 line = 1 
+# Executing task: validate_output for PORT1.
+# [1;34m
+# PORT1 OPERATION SUCCESSFUL: The output from the DUV matches the expected output. DUV value = bd024f79, expected value = bd024f79
+# [0m
+# Exiting task: validate_output for PORT1.
+# *************************************************************************************************************************************************************.
+# *************************************************************************************************************************************************************.
+# Entering task: gen_pattern_for_addition for PORT1.
+# PORT1 operand 1 is = 7cfde9f9 and operand 2 is = e33724c6 
+# Exiting task: gen_pattern_for_addition for PORT1.
+# Executing task: wait_for_response for PORT1.
+# Received response on out_resp1 line = 1 
+# Executing task: validate_output for PORT1.
+# [1;31m
+# PORT1 OPERATION FAILED: DUV response does NOT match expected reponse. The DUV response is 1 and expected response is 2
+# [0m
+# [1;31m
+# PORT1 OPERATION FAILED: The output from the DUV and the expected output DO NOT MATCH. DUV value = 60351ebf, expected value = 60350ebf 
+# [0m
+# Exiting task: validate_output for PORT1.
+# *************************************************************************************************************************************************************.
+# *************************************************************************************************************************************************************.
+# Entering task: gen_pattern_for_addition for PORT1.
+# PORT1 operand 1 is = e2f784c5 and operand 2 is = d513d2aa 
+# Exiting task: gen_pattern_for_addition for PORT1.
+# Executing task: wait_for_response for PORT1.
+# Received response on out_resp1 line = 1 
+# Executing task: validate_output for PORT1.
+# [1;31m
+# PORT1 OPERATION FAILED: DUV response does NOT match expected reponse. The DUV response is 1 and expected response is 2
+# [0m
+# [1;31m
+# PORT1 OPERATION FAILED: The output from the DUV and the expected output DO NOT MATCH. DUV value = b80b477f, expected value = b80b576f 
+# [0m
+# Exiting task: validate_output for PORT1.
+# *************************************************************************************************************************************************************.
+# *************************************************************************************************************************************************************.
+# Entering task: gen_pattern_for_addition for PORT1.
+# PORT1 operand 1 is = 72aff7e5 and operand 2 is = bbd27277 
+# Exiting task: gen_pattern_for_addition for PORT1.
+# Executing task: wait_for_response for PORT1.
+# Received response on out_resp1 line = 1 
+# Executing task: validate_output for PORT1.
+# [1;31m
+# PORT1 OPERATION FAILED: DUV response does NOT match expected reponse. The DUV response is 1 and expected response is 2
+# [0m
+# [1;34m
+# PORT1 OPERATION SUCCESSFUL: The output from the DUV matches the expected output. DUV value = 2e826a5c, expected value = 2e826a5c
+# [0m
+# Exiting task: validate_output for PORT1.
+# *************************************************************************************************************************************************************.
+# *************************************************************************************************************************************************************.
+# Entering task: gen_pattern_for_addition for PORT1.
+# PORT1 operand 1 is = 8932d612 and operand 2 is = 47ecdb8f 
+# Exiting task: gen_pattern_for_addition for PORT1.
+# Executing task: wait_for_response for PORT1.
+# Received response on out_resp1 line = 1 
+# Executing task: validate_output for PORT1.
+# [1;31m
+# PORT1 OPERATION FAILED: The output from the DUV and the expected output DO NOT MATCH. DUV value = d11fa1a1, expected value = d11fb1a1 
+# [0m
+# Exiting task: validate_output for PORT1.
+# *************************************************************************************************************************************************************.
+# *************************************************************************************************************************************************************.
+# Entering task: gen_pattern_for_addition for PORT1.
+# PORT1 operand 1 is = 793069f2 and operand 2 is = e77696ce 
+# Exiting task: gen_pattern_for_addition for PORT1.
+# Executing task: wait_for_response for PORT1.
+# Received response on out_resp1 line = 1 
+# Executing task: validate_output for PORT1.
+# [1;31m
+# PORT1 OPERATION FAILED: DUV response does NOT match expected reponse. The DUV response is 1 and expected response is 2
+# [0m
+# [1;31m
+# PORT1 OPERATION FAILED: The output from the DUV and the expected output DO NOT MATCH. DUV value = 60a6e0c0, expected value = 60a700c0 
+# [0m
+# Exiting task: validate_output for PORT1.
+# *************************************************************************************************************************************************************.
+# *************************************************************************************************************************************************************.
+# Entering task: gen_pattern_for_addition for PORT1.
+# PORT1 operand 1 is = f4007ae8 and operand 2 is = e2ca4ec5 
+# Exiting task: gen_pattern_for_addition for PORT1.
+# Executing task: wait_for_response for PORT1.
+# Received response on out_resp1 line = 1 
+# Executing task: validate_output for PORT1.
+# [1;31m
+# PORT1 OPERATION FAILED: DUV response does NOT match expected reponse. The DUV response is 1 and expected response is 2
+# [0m
+# [1;34m
+# PORT1 OPERATION SUCCESSFUL: The output from the DUV matches the expected output. DUV value = d6cac9ad, expected value = d6cac9ad
+# [0m
+# Exiting task: validate_output for PORT1.
+# *************************************************************************************************************************************************************.
+# *************************************************************************************************************************************************************.
+# Entering task: gen_pattern_for_addition for PORT1.
+# PORT1 operand 1 is = 2e58495c and operand 2 is = de8e28bd 
+# Exiting task: gen_pattern_for_addition for PORT1.
+# Executing task: wait_for_response for PORT1.
+# Received response on out_resp1 line = 1 
+# Executing task: validate_output for PORT1.
+# [1;31m
+# PORT1 OPERATION FAILED: DUV response does NOT match expected reponse. The DUV response is 1 and expected response is 2
+# [0m
+# [1;31m
+# PORT1 OPERATION FAILED: The output from the DUV and the expected output DO NOT MATCH. DUV value = 0ce69219, expected value = 0ce67219 
+# [0m
+# Exiting task: validate_output for PORT1.
+# *************************************************************************************************************************************************************.
+# *************************************************************************************************************************************************************.
+# Entering task: gen_pattern_for_addition for PORT1.
+# PORT1 operand 1 is = 96ab582d and operand 2 is = b2a72665 
+# Exiting task: gen_pattern_for_addition for PORT1.
+# Executing task: wait_for_response for PORT1.
+# Received response on out_resp1 line = 1 
+# Executing task: validate_output for PORT1.
+# [1;31m
+# PORT1 OPERATION FAILED: DUV response does NOT match expected reponse. The DUV response is 1 and expected response is 2
+# [0m
+# [1;31m
+# PORT1 OPERATION FAILED: The output from the DUV and the expected output DO NOT MATCH. DUV value = 49529eb2, expected value = 49527e92 
+# [0m
+# Exiting task: validate_output for PORT1.
+# *************************************************************************************************************************************************************.
+# *************************************************************************************************************************************************************.
+# Entering task: gen_pattern_for_addition for PORT1.
+# PORT1 operand 1 is = b1ef6263 and operand 2 is = 0573870a 
+# Exiting task: gen_pattern_for_addition for PORT1.
+# Executing task: wait_for_response for PORT1.
+# Received response on out_resp1 line = 1 
+# Executing task: validate_output for PORT1.
+# [1;34m
+# PORT1 OPERATION SUCCESSFUL: The output from the DUV matches the expected output. DUV value = b762e96d, expected value = b762e96d
+# [0m
+# Exiting task: validate_output for PORT1.
+# *************************************************************************************************************************************************************.
+# *************************************************************************************************************************************************************.
+# Entering task: gen_pattern_for_addition for PORT1.
+# PORT1 operand 1 is = c03b2280 and operand 2 is = 10642120 
+# Exiting task: gen_pattern_for_addition for PORT1.
+# Executing task: wait_for_response for PORT1.
+# Received response on out_resp1 line = 1 
+# Executing task: validate_output for PORT1.
+# [1;31m
+# PORT1 OPERATION FAILED: The output from the DUV and the expected output DO NOT MATCH. DUV value = d09f53b0, expected value = d09f43a0 
+# [0m
+# Exiting task: validate_output for PORT1.
+# *************************************************************************************************************************************************************.
+# *************************************************************************************************************************************************************.
+# Entering task: gen_pattern_for_addition for PORT1.
+# PORT1 operand 1 is = 557845aa and operand 2 is = cecccc9d 
+# Exiting task: gen_pattern_for_addition for PORT1.
+# Executing task: wait_for_response for PORT1.
+# Received response on out_resp1 line = 1 
+# Executing task: validate_output for PORT1.
+# [1;31m
+# PORT1 OPERATION FAILED: DUV response does NOT match expected reponse. The DUV response is 1 and expected response is 2
+# [0m
+# [1;31m
+# PORT1 OPERATION FAILED: The output from the DUV and the expected output DO NOT MATCH. DUV value = 24451227, expected value = 24451247 
+# [0m
+# Exiting task: validate_output for PORT1.
+# *************************************************************************************************************************************************************.
+# *************************************************************************************************************************************************************.
+# Entering task: gen_pattern_for_addition for PORT1.
+# PORT1 operand 1 is = cb203e96 and operand 2 is = 8983b813 
+# Exiting task: gen_pattern_for_addition for PORT1.
+# Executing task: wait_for_response for PORT1.
+# Received response on out_resp1 line = 1 
+# Executing task: validate_output for PORT1.
+# [1;31m
+# PORT1 OPERATION FAILED: DUV response does NOT match expected reponse. The DUV response is 1 and expected response is 2
+# [0m
+# [1;31m
+# PORT1 OPERATION FAILED: The output from the DUV and the expected output DO NOT MATCH. DUV value = 54a3f689, expected value = 54a3f6a9 
+# [0m
+# Exiting task: validate_output for PORT1.
+# *************************************************************************************************************************************************************.
+# *************************************************************************************************************************************************************.
+# Entering task: gen_pattern_for_addition for PORT1.
+# PORT1 operand 1 is = 86bc380d and operand 2 is = a9a7d653 
+# Exiting task: gen_pattern_for_addition for PORT1.
+# Executing task: wait_for_response for PORT1.
+# Received response on out_resp1 line = 1 
+# Executing task: validate_output for PORT1.
+# [1;31m
+# PORT1 OPERATION FAILED: DUV response does NOT match expected reponse. The DUV response is 1 and expected response is 2
+# [0m
+# [1;31m
+# PORT1 OPERATION FAILED: The output from the DUV and the expected output DO NOT MATCH. DUV value = 3063ee40, expected value = 30640e60 
+# [0m
+# Exiting task: validate_output for PORT1.
+# *************************************************************************************************************************************************************.
+# *************************************************************************************************************************************************************.
+# Entering task: gen_pattern_for_addition for PORT3.
+# PORT3 operand 1 is = 359fdd6b and operand 2 is = eaa62ad5 
+# Exiting task: gen_pattern_for_addition for PORT3.
+# Executing task: wait_for_response for PORT3.
+# Received response on out_resp3 line = 1 
+# Executing task: validate_output for PORT3.
+# [1;31m
+# PORT3 OPERATION FAILED: DUV response does NOT match expected reponse. The DUV response is 1 and expected response is 2
+# [0m
+# [1;31m
+# PORT3 OPERATION FAILED: The output from the DUV and the expected output DO NOT MATCH. DUV value = 20461820, expected value = 20460840 
+# [0m
+# Exiting task: validate_output for PORT3.
+# *************************************************************************************************************************************************************.
+# *************************************************************************************************************************************************************.
+# Entering task: gen_pattern_for_addition for PORT3.
+# PORT3 operand 1 is = 81174a02 and operand 2 is = d7563eae 
+# Exiting task: gen_pattern_for_addition for PORT3.
+# Executing task: wait_for_response for PORT3.
+# Received response on out_resp3 line = 1 
+# Executing task: validate_output for PORT3.
+# [1;31m
+# PORT3 OPERATION FAILED: DUV response does NOT match expected reponse. The DUV response is 1 and expected response is 2
+# [0m
+# [1;31m
+# PORT3 OPERATION FAILED: The output from the DUV and the expected output DO NOT MATCH. DUV value = 586d88d0, expected value = 586d88b0 
+# [0m
+# Exiting task: validate_output for PORT3.
+# *************************************************************************************************************************************************************.
+# *************************************************************************************************************************************************************.
+# Entering task: gen_pattern_for_addition for PORT3.
+# PORT3 operand 1 is = 0effe91d and operand 2 is = e7c572cf 
+# Exiting task: gen_pattern_for_addition for PORT3.
+# Executing task: wait_for_response for PORT3.
+# Received response on out_resp3 line = 1 
+# Executing task: validate_output for PORT3.
+# [1;34m
+# PORT3 OPERATION SUCCESSFUL: The output from the DUV matches the expected output. DUV value = f6c55bec, expected value = f6c55bec
+# [0m
+# Exiting task: validate_output for PORT3.
+# *************************************************************************************************************************************************************.
+# *************************************************************************************************************************************************************.
+# Entering task: gen_pattern_for_addition for PORT3.
+# PORT3 operand 1 is = 11844923 and operand 2 is = 0509650a 
+# Exiting task: gen_pattern_for_addition for PORT3.
+# Executing task: wait_for_response for PORT3.
+# Received response on out_resp3 line = 1 
+# Executing task: validate_output for PORT3.
+# [1;31m
+# PORT3 OPERATION FAILED: The output from the DUV and the expected output DO NOT MATCH. DUV value = 168dbe2d, expected value = 168dae2d 
+# [0m
+# Exiting task: validate_output for PORT3.
+# *************************************************************************************************************************************************************.
+# *************************************************************************************************************************************************************.
+# Entering task: gen_pattern_for_addition for PORT3.
+# PORT3 operand 1 is = e5730aca and operand 2 is = 9e314c3c 
+# Exiting task: gen_pattern_for_addition for PORT3.
+# Executing task: wait_for_response for PORT3.
+# Received response on out_resp3 line = 1 
+# Executing task: validate_output for PORT3.
+# [1;31m
+# PORT3 OPERATION FAILED: DUV response does NOT match expected reponse. The DUV response is 1 and expected response is 2
+# [0m
+# [1;34m
+# PORT3 OPERATION SUCCESSFUL: The output from the DUV matches the expected output. DUV value = 83a45706, expected value = 83a45706
+# [0m
+# Exiting task: validate_output for PORT3.
+# *************************************************************************************************************************************************************.
+# *************************************************************************************************************************************************************.
+# Entering task: gen_pattern_for_addition for PORT3.
+# PORT3 operand 1 is = 7968bdf2 and operand 2 is = 452e618a 
+# Exiting task: gen_pattern_for_addition for PORT3.
+# Executing task: wait_for_response for PORT3.
+# Received response on out_resp3 line = 1 
+# Executing task: validate_output for PORT3.
+# [1;31m
+# PORT3 OPERATION FAILED: The output from the DUV and the expected output DO NOT MATCH. DUV value = be973f7c, expected value = be971f7c 
+# [0m
+# Exiting task: validate_output for PORT3.
+# *************************************************************************************************************************************************************.
+# *************************************************************************************************************************************************************.
+# Entering task: gen_pattern_for_addition for PORT3.
+# PORT3 operand 1 is = 20c4b341 and operand 2 is = ec4b34d8 
+# Exiting task: gen_pattern_for_addition for PORT3.
+# Executing task: wait_for_response for PORT3.
+# Received response on out_resp3 line = 1 
+# Executing task: validate_output for PORT3.
+# [1;31m
+# PORT3 OPERATION FAILED: DUV response does NOT match expected reponse. The DUV response is 1 and expected response is 2
+# [0m
+# [1;31m
+# PORT3 OPERATION FAILED: The output from the DUV and the expected output DO NOT MATCH. DUV value = 0d0fe809, expected value = 0d0fe819 
+# [0m
+# Exiting task: validate_output for PORT3.
+# *************************************************************************************************************************************************************.
+# *************************************************************************************************************************************************************.
+# Entering task: gen_pattern_for_addition for PORT3.
+# PORT3 operand 1 is = 3c20f378 and operand 2 is = c48a1289 
+# Exiting task: gen_pattern_for_addition for PORT3.
+# Executing task: wait_for_response for PORT3.
+# Received response on out_resp3 line = 1 
+# Executing task: validate_output for PORT3.
+# [1;31m
+# PORT3 OPERATION FAILED: DUV response does NOT match expected reponse. The DUV response is 1 and expected response is 2
+# [0m
+# [1;31m
+# PORT3 OPERATION FAILED: The output from the DUV and the expected output DO NOT MATCH. DUV value = 00aae601, expected value = 00ab0601 
+# [0m
+# Exiting task: validate_output for PORT3.
+# *************************************************************************************************************************************************************.
+# *************************************************************************************************************************************************************.
+# Entering task: gen_pattern_for_addition for PORT3.
+# PORT3 operand 1 is = 75c50deb and operand 2 is = 5b0265b6 
+# Exiting task: gen_pattern_for_addition for PORT3.
+# Executing task: wait_for_response for PORT3.
+# Received response on out_resp3 line = 1 
+# Executing task: validate_output for PORT3.
+# [1;31m
+# PORT3 OPERATION FAILED: The output from the DUV and the expected output DO NOT MATCH. DUV value = d0c793a1, expected value = d0c773a1 
+# [0m
+# Exiting task: validate_output for PORT3.
+# *************************************************************************************************************************************************************.
+# *************************************************************************************************************************************************************.
+# Entering task: gen_pattern_for_addition for PORT3.
+# PORT3 operand 1 is = 634bf9c6 and operand 2 is = 571513ae 
+# Exiting task: gen_pattern_for_addition for PORT3.
+# Executing task: wait_for_response for PORT3.
+# Received response on out_resp3 line = 1 
+# Executing task: validate_output for PORT3.
+# [1;31m
+# PORT3 OPERATION FAILED: The output from the DUV and the expected output DO NOT MATCH. DUV value = ba60ed94, expected value = ba610d74 
+# [0m
+# Exiting task: validate_output for PORT3.
+# *************************************************************************************************************************************************************.
+# *************************************************************************************************************************************************************.
+# Entering task: gen_pattern_for_addition for PORT3.
+# PORT3 operand 1 is = de7502bc and operand 2 is = 150fdd2a 
+# Exiting task: gen_pattern_for_addition for PORT3.
+# Executing task: wait_for_response for PORT3.
+# Received response on out_resp3 line = 1 
+# Executing task: validate_output for PORT3.
+# [1;31m
+# PORT3 OPERATION FAILED: The output from the DUV and the expected output DO NOT MATCH. DUV value = f384cff6, expected value = f384dfe6 
+# [0m
+# Exiting task: validate_output for PORT3.
+# *************************************************************************************************************************************************************.
+# *************************************************************************************************************************************************************.
+# Entering task: gen_pattern_for_addition for PORT3.
+# PORT3 operand 1 is = 85d79a0b and operand 2 is = b897be71 
+# Exiting task: gen_pattern_for_addition for PORT3.
+# Executing task: wait_for_response for PORT3.
+# Received response on out_resp3 line = 1 
+# Executing task: validate_output for PORT3.
+# [1;31m
+# PORT3 OPERATION FAILED: DUV response does NOT match expected reponse. The DUV response is 1 and expected response is 2
+# [0m
+# [1;34m
+# PORT3 OPERATION SUCCESSFUL: The output from the DUV matches the expected output. DUV value = 3e6f587c, expected value = 3e6f587c
+# [0m
+# Exiting task: validate_output for PORT3.
+# *************************************************************************************************************************************************************.
+# *************************************************************************************************************************************************************.
+# Entering task: gen_pattern_for_addition for PORT3.
+# PORT3 operand 1 is = 42f24185 and operand 2 is = 27f2554f 
+# Exiting task: gen_pattern_for_addition for PORT3.
+# Executing task: wait_for_response for PORT3.
+# Received response on out_resp3 line = 1 
+# Executing task: validate_output for PORT3.
+# [1;31m
+# PORT3 OPERATION FAILED: The output from the DUV and the expected output DO NOT MATCH. DUV value = 6ae486d4, expected value = 6ae496d4 
+# [0m
+# Exiting task: validate_output for PORT3.
+# *************************************************************************************************************************************************************.
+# *************************************************************************************************************************************************************.
+# Entering task: gen_pattern_for_addition for PORT3.
+# PORT3 operand 1 is = 9dcc603b and operand 2 is = 1d06333a 
+# Exiting task: gen_pattern_for_addition for PORT3.
+# Executing task: wait_for_response for PORT3.
+# Received response on out_resp3 line = 1 
+# Executing task: validate_output for PORT3.
+# [1;34m
+# PORT3 OPERATION SUCCESSFUL: The output from the DUV matches the expected output. DUV value = bad29375, expected value = bad29375
+# [0m
+# Exiting task: validate_output for PORT3.
+# *************************************************************************************************************************************************************.
+# *************************************************************************************************************************************************************.
+# Entering task: gen_pattern_for_addition for PORT3.
+# PORT3 operand 1 is = bf23327e and operand 2 is = 0aaa4b15 
+# Exiting task: gen_pattern_for_addition for PORT3.
+# Executing task: wait_for_response for PORT3.
+# Received response on out_resp3 line = 1 
+# Executing task: validate_output for PORT3.
+# [1;31m
+# PORT3 OPERATION FAILED: The output from the DUV and the expected output DO NOT MATCH. DUV value = c9cd7d83, expected value = c9cd7d93 
+# [0m
+# Exiting task: validate_output for PORT3.
+# *************************************************************************************************************************************************************.
+# *************************************************************************************************************************************************************.
+# Entering task: gen_pattern_for_addition for PORT3.
+# PORT3 operand 1 is = 78d99bf1 and operand 2 is = 6c9c4bd9 
+# Exiting task: gen_pattern_for_addition for PORT3.
+# Executing task: wait_for_response for PORT3.
+# Received response on out_resp3 line = 1 
+# Executing task: validate_output for PORT3.
+# [1;31m
+# PORT3 OPERATION FAILED: The output from the DUV and the expected output DO NOT MATCH. DUV value = e575e7aa, expected value = e575e7ca 
+# [0m
+# Exiting task: validate_output for PORT3.
+# *************************************************************************************************************************************************************.
+# *************************************************************************************************************************************************************.
+# Entering task: gen_pattern_for_addition for PORT3.
+# PORT3 operand 1 is = 31230762 and operand 2 is = 2635fb4c 
+# Exiting task: gen_pattern_for_addition for PORT3.
+# Executing task: wait_for_response for PORT3.
+# Received response on out_resp3 line = 1 
+# Executing task: validate_output for PORT3.
+# [1;34m
+# PORT3 OPERATION SUCCESSFUL: The output from the DUV matches the expected output. DUV value = 575902ae, expected value = 575902ae
+# [0m
+# Exiting task: validate_output for PORT3.
+# *************************************************************************************************************************************************************.
+# *************************************************************************************************************************************************************.
+# Entering task: gen_pattern_for_addition for PORT3.
+# PORT3 operand 1 is = 4fa1559f and operand 2 is = 47b9a18f 
+# Exiting task: gen_pattern_for_addition for PORT3.
+# Executing task: wait_for_response for PORT3.
+# Received response on out_resp3 line = 1 
+# Executing task: validate_output for PORT3.
+# [1;31m
+# PORT3 OPERATION FAILED: The output from the DUV and the expected output DO NOT MATCH. DUV value = 975b172e, expected value = 975af72e 
+# [0m
+# Exiting task: validate_output for PORT3.
+# *************************************************************************************************************************************************************.
+# *************************************************************************************************************************************************************.
+# Entering task: gen_pattern_for_addition for PORT3.
+# PORT3 operand 1 is = 7c6da9f8 and operand 2 is = dbcd60b7 
+# Exiting task: gen_pattern_for_addition for PORT3.
+# Executing task: wait_for_response for PORT3.
+# Received response on out_resp3 line = 1 
+# Executing task: validate_output for PORT3.
+# [1;31m
+# PORT3 OPERATION FAILED: DUV response does NOT match expected reponse. The DUV response is 1 and expected response is 2
+# [0m
+# [1;31m
+# PORT3 OPERATION FAILED: The output from the DUV and the expected output DO NOT MATCH. DUV value = 583b1aaf, expected value = 583b0aaf 
+# [0m
+# Exiting task: validate_output for PORT3.
+# *************************************************************************************************************************************************************.
+# *************************************************************************************************************************************************************.
+# Entering task: gen_pattern_for_addition for PORT3.
+# PORT3 operand 1 is = cfc4569f and operand 2 is = ae7d945c 
+# Exiting task: gen_pattern_for_addition for PORT3.
+# Executing task: wait_for_response for PORT3.
+# Received response on out_resp3 line = 1 
+# Executing task: validate_output for PORT3.
+# [1;31m
+# PORT3 OPERATION FAILED: DUV response does NOT match expected reponse. The DUV response is 1 and expected response is 2
+# [0m
+# [1;31m
+# PORT3 OPERATION FAILED: The output from the DUV and the expected output DO NOT MATCH. DUV value = 7e41caeb, expected value = 7e41eafb 
+# [0m
+# Exiting task: validate_output for PORT3.
+# *************************************************************************************************************************************************************.
+# Execution of test sequence: test_multiple_rand__addition is complete.
+# ** Note: $finish    : nofile(187)
+#    Time: 53400 ns  Iteration: 1  Instance: /calc1_tb_top

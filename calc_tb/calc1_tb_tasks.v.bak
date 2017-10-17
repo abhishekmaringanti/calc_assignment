@@ -1,0 +1,112 @@
+// This file contains all the tasks used in the testbench for the DUV
+// verification.
+
+// Task to generate the input command and data 
+task gen_pattern_for_addition;
+    input [2:0] port_number;           // Port number
+    input rand_en_dis;                  // 0 - Disable randomization of the data, 1 - Enable randomization of the data
+    input overflow_en_dis;              // 0 - Disable Overflow (overflow will never occur), 1 - Enable Overflow (overflow may occur depending on inputs) 
+    input [31:0] fixed_operand1;        // Fixed first operand chosen by the user
+    input [31:0] fixed_operand2;        // Fixed second operand chosen by the user
+    
+    output [31:0] data;                 // Actual data signal that is input to the DUV
+    output [3:0] command;               // Actual command signal that is input to the DUV
+    output [31:0] expected_output;      // Expected output on the DUV output data line
+    output [1:0]  expected_response;    // Expected response on the DUV output response line
+
+`include "../../calc_tb/global_defines.v"
+
+    reg [31:0] data1;
+    reg [31:0] data2;
+    reg [32:0] expected_output_temp;
+
+    begin
+        if (rand_en_dis == 'b0)         // Randomization of the data is disabled. Overflow may or may not happen depending on the fixed input data
+        begin
+            @(posedge clk_i) data = fixed_operand1;
+            data1   = data;
+            command = `ADD;
+	        @(posedge clk_i) data = fixed_operand2;
+            data2   = data;
+            command = `NO_OPER;
+            $display ("PORT%d operand 1 is = %h and operand 2 is = %h \n", port_number, data1, data2);
+        end
+	    else                            // Randomization of the data is enabled
+	    begin
+            if (overflow_en_dis == 'b0) // Overflow is disabled
+            begin
+                @(posedge clk_i) data = $random;
+                data1   = data;
+                command = `ADD;
+                @(posedge clk_i) data = ({$random} % (32'hffff - data1));
+                data2   = data;
+                command = `NO_OPER;
+                $display ("PORT%d operand 1 is = %h and operand 2 is = %h \n", port_number, data1, data2);
+            end
+            else                        // overflow is enabled and data is random.
+            begin
+                @(posedge clk_i) data = $random;
+                data1 = data;
+                command = `ADD;
+                @(posedge clk_i) data = $random;
+                data2 = data;
+                command = `NO_OPER;
+                $display ("PORT%d operand 1 is = %h and operand 2 is = %h \n", port_number, data1, data2);
+            end
+	    end
+
+        expected_output_temp = data1+data2;
+        expected_output = expected_output_temp[31:0];
+        if (expected_output_temp[32])
+            expected_response = `DUV_INV_CMD;
+        else
+            expected_response = `DUV_SUCC_RESP;
+    end
+
+endtask
+
+// This task is used to validate the DUV output when the out_respX is 0x1
+// (successful operation completion)
+task check_output;
+    input [2:0] port_number;
+    input [31:0] duv_output;
+    input [31:0] exp_output;
+    input [1:0]  duv_resp;
+    input [1:0]  exp_resp;
+    input [1:0]  port;
+
+
+    begin
+        if (duv_resp != exp_resp)
+            begin
+                $display ("PORT%d OPERATION FAILED: DUV response does NOT match expected reponse. The DUV response is %d and expected response is %d\n", port_number, duv_resp, exp_resp);
+            end
+
+        case (duv_resp)
+            `DUV_SUCC_RESP:  begin
+                                if (duv_output == exp_output[31:0])
+                                    begin
+                                        $display ("PORT%d OPERATION SUCCESSFUL: The output from the DUV matches the expected output. DUV value = %h, expected value = %h \n", port_number, duv_output, exp_output);
+                                    end
+                                else
+                                    begin
+                                        $display ("PORT%d OPERATION FAILED: The output from the DUV and the expected output DO NOT MATCH. DUV value = %h, expected value = %h \n", port_number, duv_output, exp_output);
+                                    end
+                            end
+            
+            `DUV_INV_CMD  :  begin
+                                if (duv_resp == exp_resp)
+                                    $display ("PORT%d OPERATION SUCCESSFUL: The output response of the DUV matches the expected reponse of 0x2 INVALID COMMAND or OVERFLOW/UNDERFLOW.\n");
+                            end
+            
+            `DUV_INT_ERR  :  begin
+                                $display ("PORT%d OPERATION FAILED: The output response of the DUV is 0x3 INTERNAL ERROR. TRY TO INVESTIGATE WHAT HAPPENED\n");
+                            end
+
+            default      :  begin
+                                $display ("PORT%d OPERATION FAILED: The output response of the DUV is %d. TRY TO INVESTIGATE WHAT HAPPENED\n", duv_resp);
+                            end
+        endcase
+    end
+
+endtask

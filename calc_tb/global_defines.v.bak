@@ -1,0 +1,29 @@
+
+// This file contains all the global defines used in multiple files.
+
+// timescale
+`timescale 1ns/1ps
+// input command OPCODES
+`define NO_OPER  'd0
+`define ADD      'd1
+`define SUB      'd2
+`define LSHIFT   'd5
+`define RSHIFT   'd6
+
+// Output response codes
+`define DUV_NO_RESP      'd0
+`define DUV_SUCC_RESP    'd1
+`define DUV_INV_CMD      'd2
+`define DUV_INT_ERR      'd3
+
+// parameters used in the top file.
+`define PORT1 'd1
+`define PORT2 'd2
+`define PORT3 'd3
+`define PORT4 'd4
+
+`define DIS_RANDOM_DATA         'd0
+`define EN_RANDOM_DATA          'd1
+`define DIS_OVER_UNDER_FLOW     'd0
+`define EN_OVER_UNDER_FLOW      'd1
+

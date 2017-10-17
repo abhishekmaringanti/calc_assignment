@@ -1,0 +1,20 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/msc17/am17645/linux/DesignVerification/assignment-1/sim/calc_duv_example_tb
+vexample_calc1_tb
+V0;Fk=HPj@XA3n]oNKWB9P1
+r1
+!s85 0
+31
+IfB_`IOb^m]`5d7L1XoFco0
+w1508179653
+8/home/msc17/am17645/linux/DesignVerification/assignment-1/sim/calc_duv_example_tb/example_calc1_tb.v
+F/home/msc17/am17645/linux/DesignVerification/assignment-1/sim/calc_duv_example_tb/example_calc1_tb.v
+L0 4
+OL;L;6.5c;42
+o-work work -nocovercells -L mtiAvm -L mtiOvm -L mtiUPF
+tCoverOpt 1 CoverFEC 0 CoverShortCircuit 0
+!s100 8;[0=^8XBT:27lCWbnW6@2
+!s102 -nocovercells

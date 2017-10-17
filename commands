@@ -1,0 +1,3 @@
+vlog -nodebug ../../calc_tb/calc1_tb_top.v
+vsim -c -do "run -all" calc1_tb_top
+

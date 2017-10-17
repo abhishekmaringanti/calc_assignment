@@ -1,0 +1,380 @@
+# //  ModelSim SE-64 6.5c Aug 27 2009 Linux 2.6.32-642.el6.x86_64
+# //
+# //  Copyright 1991-2009 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+# reading /usr/local/modelsim/modeltech/linux_x86_64/../modelsim.ini
+# Loading project calc_duv_verification
+# reading /usr/local/modelsim/modeltech/linux_x86_64/../modelsim.ini
+# reading modelsim.ini
+# Loading project duv_example_tb
+# Compile of example_calc1_tb.v was successful.
+vsim -t ps -novopt example_calc1_tb
+# vsim -t ps -novopt example_calc1_tb 
+# Refreshing /home/msc17/am17645/linux/DesignVerification/assignment-1/sim/calc_duv_example_tb/work.example_calc1_tb
+# ** Note: (vlog-1901) OptionFile "/usr/local/modelsim/modeltech/vlog.opt" not found. Ignored.
+# Loading work.example_calc1_tb
+# Loading calc1_black_box.calc1
+# Loading calc1_black_box.calc1_top
+# Loading calc1_black_box.exdbin_mac
+# Loading calc1_black_box.holdreg
+# Loading calc1_black_box.alu_input_stage
+# Loading calc1_black_box.mux_out
+# Loading calc1_black_box.alu_output_stage
+# Loading calc1_black_box.priority
+# Loading calc1_black_box.shifter
+add wave \
+{sim:/example_calc1_tb/out_data1 } \
+{sim:/example_calc1_tb/out_data2 } \
+{sim:/example_calc1_tb/out_data3 } \
+{sim:/example_calc1_tb/out_data4 } \
+{sim:/example_calc1_tb/out_resp1 } \
+{sim:/example_calc1_tb/out_resp2 } \
+{sim:/example_calc1_tb/out_resp3 } \
+{sim:/example_calc1_tb/out_resp4 } \
+{sim:/example_calc1_tb/c_clk } \
+{sim:/example_calc1_tb/req1_cmd_in } \
+{sim:/example_calc1_tb/req2_cmd_in } \
+{sim:/example_calc1_tb/req3_cmd_in } \
+{sim:/example_calc1_tb/req4_cmd_in } \
+{sim:/example_calc1_tb/req1_data_in } \
+{sim:/example_calc1_tb/req2_data_in } \
+{sim:/example_calc1_tb/req3_data_in } \
+{sim:/example_calc1_tb/req4_data_in } \
+{sim:/example_calc1_tb/reset } 
+run
+#                    0: r:1 
+#  1c: 0,1d:         0 
+#  2c: 0,2d:         0 
+#  3c: 0,3d:         0 
+#  4c: x,4d:         0 
+#  1r:X,1d:         x 
+#  2r:X,2d:         x 
+#  3r:X,3d:         x 
+#  4r:X,4d:         x 
+# 
+# 
+run -all
+#                  800: r:0 
+#  1c: 0,1d:         0 
+#  2c: 0,2d:         0 
+#  3c: 0,3d:         0 
+#  4c: x,4d:         0 
+#  1r:X,1d:         x 
+#  2r:X,2d:         x 
+#  3r:X,3d:         x 
+#  4r:X,4d:         x 
+# 
+# 
+#                 1200: r:0 
+#  1c: 1,1d:         1 
+#  2c: 0,2d:         0 
+#  3c: 0,3d:         0 
+#  4c: 0,4d:         0 
+#  1r:X,1d:         x 
+#  2r:X,2d:         x 
+#  3r:X,3d:         x 
+#  4r:X,4d:         x 
+# 
+# 
+#                 1400: r:0 
+#  1c: 0,1d: 536870911 
+#  2c: 0,2d:         0 
+#  3c: 0,3d:         0 
+#  4c: 0,4d:         0 
+#  1r:X,1d:         x 
+#  2r:X,2d:         x 
+#  3r:X,3d:         x 
+#  4r:X,4d:         x 
+# 
+# 
+#                 1800: r:0 
+#  1c: 1,1d: 536870911 
+#  2c: 0,2d:         0 
+#  3c: 0,3d:         0 
+#  4c: 0,4d:         0 
+#  1r:1,1d: 536870912 
+#  2r:0,2d:         x 
+#  3r:0,3d:         0 
+#  4r:0,4d:         0 
+# 
+# 
+#                 2000: r:0 
+#  1c: 0,1d: 536870911 
+#  2c: 0,2d:         0 
+#  3c: 0,3d:         0 
+#  4c: 0,4d:         0 
+#  1r:0,1d:         0 
+#  2r:0,2d:         0 
+#  3r:0,3d:         0 
+#  4r:0,4d:         0 
+# 
+# 
+#                 2400: r:0 
+#  1c: 1,1d:         0 
+#  2c: 0,2d:         0 
+#  3c: 0,3d:         0 
+#  4c: 0,4d:         0 
+#  1r:1,1d:1073741822 
+#  2r:0,2d:         0 
+#  3r:0,3d:         0 
+#  4r:0,4d:         0 
+# 
+# 
+#                 2600: r:0 
+#  1c: 0,1d:         0 
+#  2c: 0,2d:         0 
+#  3c: 0,3d:         0 
+#  4c: 0,4d:         0 
+#  1r:0,1d:         0 
+#  2r:0,2d:         0 
+#  3r:0,3d:         0 
+#  4r:0,4d:         0 
+# 
+# 
+# Break in Module example_calc1_tb at /home/msc17/am17645/linux/DesignVerification/assignment-1/sim/calc_duv_example_tb/example_calc1_tb.v line 92
+step
+run -all
+# Break key hit 
+# Break at /home/msc17/am17645/linux/DesignVerification/assignment-1/sim/calc_duv_example_tb/example_calc1_tb.v line 13
+# Break key hit 
+stop
+quit -sim
+# Compile of example_calc1_tb.v was successful.
+vsim -t ps -novopt example_calc1_tb
+# vsim -t ps -novopt example_calc1_tb 
+# Refreshing /home/msc17/am17645/linux/DesignVerification/assignment-1/sim/calc_duv_example_tb/work.example_calc1_tb
+# ** Note: (vlog-1901) OptionFile "/usr/local/modelsim/modeltech/vlog.opt" not found. Ignored.
+# Loading work.example_calc1_tb
+# Loading calc1_black_box.calc1
+# ** Warning: (vsim-3009) [TSCALE] - Module 'calc1' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /example_calc1_tb/DUV
+# Loading calc1_black_box.calc1_top
+# ** Warning: (vsim-3009) [TSCALE] - Module 'calc1_top' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /example_calc1_tb/DUV/calculator
+# Loading calc1_black_box.exdbin_mac
+# ** Warning: (vsim-3009) [TSCALE] - Module 'exdbin_mac' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /example_calc1_tb/DUV/calculator/adder
+# Loading calc1_black_box.holdreg
+# ** Warning: (vsim-3009) [TSCALE] - Module 'holdreg' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /example_calc1_tb/DUV/calculator/holdreg1
+# Loading calc1_black_box.alu_input_stage
+# ** Warning: (vsim-3009) [TSCALE] - Module 'alu_input_stage' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /example_calc1_tb/DUV/calculator/in_stage1
+# Loading calc1_black_box.mux_out
+# ** Warning: (vsim-3009) [TSCALE] - Module 'mux_out' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /example_calc1_tb/DUV/calculator/mux_out1
+# Loading calc1_black_box.alu_output_stage
+# ** Warning: (vsim-3009) [TSCALE] - Module 'alu_output_stage' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /example_calc1_tb/DUV/calculator/out_stage1
+# Loading calc1_black_box.priority
+# ** Warning: (vsim-3009) [TSCALE] - Module 'priority' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /example_calc1_tb/DUV/calculator/priority_logic
+# Loading calc1_black_box.shifter
+# ** Warning: (vsim-3009) [TSCALE] - Module 'shifter' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /example_calc1_tb/DUV/calculator/shifter1
+run -all
+#                    0: r:1 
+#  1c: 0,1d:         0 
+#  2c: 0,2d:         0 
+#  3c: 0,3d:         0 
+#  4c: x,4d:         0 
+#  1r:X,1d:         x 
+#  2r:X,2d:         x 
+#  3r:X,3d:         x 
+#  4r:X,4d:         x 
+# 
+# 
+#               800000: r:0 
+#  1c: 0,1d:         0 
+#  2c: 0,2d:         0 
+#  3c: 0,3d:         0 
+#  4c: x,4d:         0 
+#  1r:X,1d:         x 
+#  2r:X,2d:         x 
+#  3r:X,3d:         x 
+#  4r:X,4d:         x 
+# 
+# 
+#              1200000: r:0 
+#  1c: 1,1d:         1 
+#  2c: 0,2d:         0 
+#  3c: 0,3d:         0 
+#  4c: 0,4d:         0 
+#  1r:X,1d:         x 
+#  2r:X,2d:         x 
+#  3r:X,3d:         x 
+#  4r:X,4d:         x 
+# 
+# 
+#              1400000: r:0 
+#  1c: 0,1d: 536870911 
+#  2c: 0,2d:         0 
+#  3c: 0,3d:         0 
+#  4c: 0,4d:         0 
+#  1r:X,1d:         x 
+#  2r:X,2d:         x 
+#  3r:X,3d:         x 
+#  4r:X,4d:         x 
+# 
+# 
+#              1800000: r:0 
+#  1c: 1,1d: 536870911 
+#  2c: 0,2d:         0 
+#  3c: 0,3d:         0 
+#  4c: 0,4d:         0 
+#  1r:1,1d: 536870912 
+#  2r:0,2d:         x 
+#  3r:0,3d:         0 
+#  4r:0,4d:         0 
+# 
+# 
+#              2000000: r:0 
+#  1c: 0,1d: 536870911 
+#  2c: 0,2d:         0 
+#  3c: 0,3d:         0 
+#  4c: 0,4d:         0 
+#  1r:0,1d:         0 
+#  2r:0,2d:         0 
+#  3r:0,3d:         0 
+#  4r:0,4d:         0 
+# 
+# 
+#              2400000: r:0 
+#  1c: 1,1d:         0 
+#  2c: 0,2d:         0 
+#  3c: 0,3d:         0 
+#  4c: 0,4d:         0 
+#  1r:1,1d:1073741822 
+#  2r:0,2d:         0 
+#  3r:0,3d:         0 
+#  4r:0,4d:         0 
+# 
+# 
+#              2600000: r:0 
+#  1c: 0,1d:         0 
+#  2c: 0,2d:         0 
+#  3c: 0,3d:         0 
+#  4c: 0,4d:         0 
+#  1r:0,1d:         0 
+#  2r:0,2d:         0 
+#  3r:0,3d:         0 
+#  4r:0,4d:         0 
+# 
+# 
+# Break in Module example_calc1_tb at /home/msc17/am17645/linux/DesignVerification/assignment-1/sim/calc_duv_example_tb/example_calc1_tb.v line 93
+restart -f
+# ** Warning: (vsim-3009) [TSCALE] - Module 'calc1' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /example_calc1_tb/DUV
+# ** Warning: (vsim-3009) [TSCALE] - Module 'calc1_top' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /example_calc1_tb/DUV/calculator
+# ** Warning: (vsim-3009) [TSCALE] - Module 'exdbin_mac' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /example_calc1_tb/DUV/calculator/adder
+# ** Warning: (vsim-3009) [TSCALE] - Module 'holdreg' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /example_calc1_tb/DUV/calculator/holdreg1
+# ** Warning: (vsim-3009) [TSCALE] - Module 'alu_input_stage' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /example_calc1_tb/DUV/calculator/in_stage1
+# ** Warning: (vsim-3009) [TSCALE] - Module 'mux_out' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /example_calc1_tb/DUV/calculator/mux_out1
+# ** Warning: (vsim-3009) [TSCALE] - Module 'alu_output_stage' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /example_calc1_tb/DUV/calculator/out_stage1
+# ** Warning: (vsim-3009) [TSCALE] - Module 'priority' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /example_calc1_tb/DUV/calculator/priority_logic
+# ** Warning: (vsim-3009) [TSCALE] - Module 'shifter' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /example_calc1_tb/DUV/calculator/shifter1
+run -all
+#                    0: r:1 
+#  1c: 0,1d:         0 
+#  2c: 0,2d:         0 
+#  3c: 0,3d:         0 
+#  4c: x,4d:         0 
+#  1r:X,1d:         x 
+#  2r:X,2d:         x 
+#  3r:X,3d:         x 
+#  4r:X,4d:         x 
+# 
+# 
+#               800000: r:0 
+#  1c: 0,1d:         0 
+#  2c: 0,2d:         0 
+#  3c: 0,3d:         0 
+#  4c: x,4d:         0 
+#  1r:X,1d:         x 
+#  2r:X,2d:         x 
+#  3r:X,3d:         x 
+#  4r:X,4d:         x 
+# 
+# 
+#              1200000: r:0 
+#  1c: 1,1d:         1 
+#  2c: 0,2d:         0 
+#  3c: 0,3d:         0 
+#  4c: 0,4d:         0 
+#  1r:X,1d:         x 
+#  2r:X,2d:         x 
+#  3r:X,3d:         x 
+#  4r:X,4d:         x 
+# 
+# 
+#              1400000: r:0 
+#  1c: 0,1d: 536870911 
+#  2c: 0,2d:         0 
+#  3c: 0,3d:         0 
+#  4c: 0,4d:         0 
+#  1r:X,1d:         x 
+#  2r:X,2d:         x 
+#  3r:X,3d:         x 
+#  4r:X,4d:         x 
+# 
+# 
+#              1800000: r:0 
+#  1c: 1,1d: 536870911 
+#  2c: 0,2d:         0 
+#  3c: 0,3d:         0 
+#  4c: 0,4d:         0 
+#  1r:1,1d: 536870912 
+#  2r:0,2d:         x 
+#  3r:0,3d:         0 
+#  4r:0,4d:         0 
+# 
+# 
+#              2000000: r:0 
+#  1c: 0,1d: 536870911 
+#  2c: 0,2d:         0 
+#  3c: 0,3d:         0 
+#  4c: 0,4d:         0 
+#  1r:0,1d:         0 
+#  2r:0,2d:         0 
+#  3r:0,3d:         0 
+#  4r:0,4d:         0 
+# 
+# 
+#              2400000: r:0 
+#  1c: 1,1d:         0 
+#  2c: 0,2d:         0 
+#  3c: 0,3d:         0 
+#  4c: 0,4d:         0 
+#  1r:1,1d:1073741822 
+#  2r:0,2d:         0 
+#  3r:0,3d:         0 
+#  4r:0,4d:         0 
+# 
+# 
+#              2600000: r:0 
+#  1c: 0,1d:         0 
+#  2c: 0,2d:         0 
+#  3c: 0,3d:         0 
+#  4c: 0,4d:         0 
+#  1r:0,1d:         0 
+#  2r:0,2d:         0 
+#  3r:0,3d:         0 
+#  4r:0,4d:         0 
+# 
+# 
+# Break in Module example_calc1_tb at /home/msc17/am17645/linux/DesignVerification/assignment-1/sim/calc_duv_example_tb/example_calc1_tb.v line 93
+quit
