@@ -1,9 +1,0 @@
-/home/msc17/am17645/linux/DesignVerification/assignment-1/calc_tb/gen_clk_rst.v {1 {vlog -work work -vopt -nocovercells /home/msc17/am17645/linux/DesignVerification/assignment-1/calc_tb/gen_clk_rst.v
-** Note: (vlog-1901) OptionFile "/usr/local/modelsim/modeltech/vlog.opt" not found. Ignored.
-Model Technology ModelSim SE-64 vlog 6.5c Compiler 2009.08 Aug 27 2009
--- Compiling module gen_clk_rst
-
-Top level modules:
-	gen_clk_rst
-
-} {} {}}
